@@ -41,21 +41,17 @@ export default function Navbar() {
           </div>
           <div className="flex w-3/4 justify-around relative">
             <div className="group">
-              <h1 className="cursor-pointer hover:text-gray-200">Home</h1>
-              <div className="absolute hidden group-hover:block bg-sky-700 text-white py-2 rounded-md shadow-lg min-w-[120px]">
-                <a href="#" className="block px-4 py-2 hover:bg-sky-800">
-                  Overview
-                </a>
-                <a href="#" className="block px-4 py-2 hover:bg-sky-800">
-                  Dashboard
-                </a>
-                <a href="#" className="block px-4 py-2 hover:bg-sky-800">
-                  Updates
-                </a>
-              </div>
+              <a href="/" className="cursor-pointer hover:text-gray-200">
+                Home
+              </a>
             </div>
             <div className="group">
-              <h1 className="cursor-pointer hover:text-gray-200">Products</h1>
+              <a
+                href="/products"
+                className="cursor-pointer hover:text-gray-200"
+              >
+                Products
+              </a>
               <div className="absolute hidden group-hover:block bg-sky-700 text-white py-2 rounded-md shadow-lg min-w-[120px]">
                 <a href="#" className="block px-4 py-2 hover:bg-sky-800">
                   All Products
