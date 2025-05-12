@@ -1,4 +1,6 @@
 import Hero from "./components/common_components/homepage_components/hero";
+import Mainservices from "./components/common_components/homepage_components/main_components";
+import Ourservices from "./components/common_components/homepage_components/ourservices";
 import Navbar from "./components/common_components/navbar";
 
 export default function Home() {
@@ -6,6 +8,8 @@ export default function Home() {
     <div>
       <Navbar />
       <Hero />
+      <Ourservices />
+      <Mainservices />
     </div>
   );
 }
