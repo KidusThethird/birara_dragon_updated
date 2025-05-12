@@ -1,0 +1,58 @@
+const products = [
+  { name: "Solid Wood Wall Panels", image: "/products/1.jpeg" },
+  { name: "Dining table", image: "/products/2.jpeg" },
+  { name: "Sofa bed", image: "/products/3.jpeg" },
+  { name: "Fence Main Gate", image: "/products/4.jpeg" },
+  { name: "Side Table", image: "/products/5.jpeg" },
+  { name: "Cast Aluminium", image: "/products/6.jpeg" },
+
+  { name: "French Door", image: "/products/7.jpeg" },
+  { name: "Aluminum / stainless steel / ...", image: "/products/8.jpeg" },
+  { name: "Floor Lamp", image: "/products/9.jpeg" },
+  { name: "CCTV", image: "/products/10.jpeg" },
+  { name: "Generator", image: "/products/11.jpeg" },
+  { name: "Home Theater", image: "/products/12.jpeg" },
+
+  { name: "Massage Chair", image: "/products/13.jpeg" },
+  { name: "Folding Door", image: "/products/14.jpeg" },
+  { name: "Sliding Door", image: "/products/15.jpeg" },
+  { name: "Plywood Wood Door", image: "/products/16.png" },
+  { name: "Wpc Door", image: "/products/17.jpeg" },
+  { name: "Veneer Wood Door", image: "/products/18.jpeg" },
+  { name: "HDF Wooden Door", image: "/products/19.jpeg" },
+  { name: "Solid Wood Door", image: "/products/20.jpeg" },
+  { name: "Lighting Switch", image: "/products/21.jpeg" },
+  { name: "EV Charging Station", image: "/products/22.jpeg" },
+  {
+    name: "Pool Table / Table Soccer / AI / ...",
+    image: "/products/23.png",
+  },
+  { name: "PS5", image: "/products/24.jpeg" },
+
+  { name: "Sauna Room / FAR Infrared Sauna", image: "/products/26.jpeg" },
+  { name: "Shower Flooring", image: "/products/27.jpeg" },
+  { name: "Colorful Stone Coated Metal", image: "/products/28.jpeg" },
+
+  { name: "Polished Glazed Tile", image: "/products/30.jpeg" },
+
+  { name: "Eco-friendly Door", image: "/products/31.jpeg" },
+  { name: "Container House", image: "/products/32.jpeg" },
+  { name: "Track System / Accessories", image: "/products/33.jpeg" },
+  { name: "Blinds", image: "/products/34.jpeg" },
+  { name: "Panoramic Elevator", image: "/products/35.jpeg" },
+  { name: "Escalator", image: "/products/36.jpeg" },
+
+  { name: "Home Elevator / Villa Elevator", image: "/products/37.jpeg" },
+
+  { name: "Hospital Elevator", image: "/products/38.jpeg" },
+  { name: "Building structure", image: "/products/39.jpeg" },
+  { name: "Transportation Buildings", image: "/products/40.jpeg" },
+  { name: "Industrial", image: "/products/41.jpeg" },
+  { name: "Commercial Buildings", image: "/products/42.jpeg" },
+  { name: "Residential Buildings", image: "/products/43.png" },
+  { name: "Outdoor wall lamp", image: "/products/44.jpeg" },
+  { name: "Track Light", image: "/products/45.jpeg" },
+  { name: "Water Vapor Fireplace", image: "/products/46.jpeg" },
+  { name: "Electric Fireplace", image: "/products/47.jpeg" },
+  { name: "Wood-Burning Fireplace", image: "/products/48.jpeg" },
+];

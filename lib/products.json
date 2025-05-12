@@ -1,0 +1,352 @@
+[
+  {
+    "image_id": "1",
+    "title": "Solid Wood Wall Panels",
+    "detail_text": "Enhance your space with our premium solid wood wall panels, crafted from high-quality timber for a natural, elegant look. These panels are designed to bring warmth and sophistication to any room, making them ideal for living areas, bedrooms, or offices. Their durable construction ensures long-lasting beauty, while the rich grain patterns add a unique touch to your decor. Easy to install and maintain, they offer a timeless solution for upgrading your interior design.",
+    "category": "Furniture"
+  },
+  {
+    "image_id": "2",
+    "title": "Dining table",
+    "detail_text": "A sturdy and stylish dining table, perfect for family gatherings and dinner parties. Crafted with high-quality materials, this table offers ample space for large meals and entertaining guests. Its sleek design complements both modern and traditional interiors, adding a focal point to your dining area. The robust construction ensures durability, while the smooth finish makes it easy to clean and maintain for years of use.",
+    "category": "Furniture",
+    "related_images": ["sc1", "sc2", "sc3", "sc4"],
+    "bigimages": ["big1", "big2", "big3", "big4"]
+  },
+  {
+    "image_id": "3",
+    "title": "Sofa bed",
+    "detail_text": "A versatile sofa bed that combines comfort and functionality, ideal for small spaces. This dual-purpose piece transforms effortlessly from a cozy sofa into a spacious bed, perfect for overnight guests. Upholstered in durable, soft fabric, it offers plush seating during the day and a supportive sleeping surface at night. Its compact design saves space without compromising style, making it a practical addition to any home.",
+    "category": "Furniture",
+    "related_images": ["sc9", "sc10", "sc11", "sc12"],
+    "bigimages": ["big8", "big9", "big10"]
+  },
+  {
+    "image_id": "4",
+    "title": "Fence Main Gate",
+    "detail_text": "A durable and secure main gate for your fence, designed to enhance your property's entrance. Constructed with robust materials, this gate provides excellent protection while adding a welcoming aesthetic to your home. Its weather-resistant finish ensures longevity, even in harsh conditions, and the sturdy locking mechanism offers peace of mind. Perfect for both residential and commercial properties, it blends security with style seamlessly.",
+    "category": "Furniture"
+  },
+  {
+    "image_id": "5",
+    "title": "Side Table",
+    "detail_text": "A sleek side table to complement your living space, perfect for lamps or decor. Crafted with a minimalist design, this table fits effortlessly beside sofas or chairs, adding both functionality and elegance. Its sturdy build supports a variety of items, from books to decorative pieces, while the smooth surface is easy to wipe down. Available in multiple finishes, it adapts to any interior style with ease.",
+    "category": "Furniture"
+  },
+  {
+    "image_id": "6",
+    "title": "Cast Aluminium",
+    "detail_text": "Elegant cast aluminium furniture, combining durability with a modern aesthetic. This lightweight yet strong material resists rust and corrosion, making it ideal for both indoor and outdoor use. The intricate designs add a touch of sophistication, while the low maintenance requirements save you time. Perfect for patios, gardens, or living rooms, this furniture enhances any setting with its contemporary appeal.",
+    "category": "Furniture"
+  },
+  {
+    "image_id": "7",
+    "title": "French Door",
+    "detail_text": "Classic French doors to add a touch of sophistication to your home.",
+    "category": "Doors"
+  },
+  {
+    "image_id": "8",
+    "title": "Aluminum / stainless steel / ...",
+    "detail_text": "High-quality aluminum and stainless steel products for various applications.",
+    "category": "Furniture"
+  },
+  {
+    "image_id": "9",
+    "title": "Floor Lamp",
+    "detail_text": "A stylish floor lamp to brighten up your room with a warm, inviting glow.",
+    "category": "Lighting"
+  },
+  {
+    "image_id": "10",
+    "title": "CCTV",
+    "detail_text": "Advanced CCTV systems to ensure the security of your home or business.",
+    "category": "Electronics"
+  },
+  {
+    "image_id": "11",
+    "title": "Generator",
+    "detail_text": "Reliable generators to keep your home powered during outages.",
+    "category": "Electronics"
+  },
+  {
+    "image_id": "12",
+    "title": "Home Theater",
+    "detail_text": "Immerse yourself in entertainment with our state-of-the-art home theater systems.",
+    "category": "Electronics"
+  },
+  {
+    "image_id": "13",
+    "title": "Massage Chair",
+    "detail_text": "Relax and unwind with our luxurious massage chair, designed for ultimate comfort. Featuring multiple massage settings, this chair targets key areas like your back, neck, and shoulders to relieve stress. Its ergonomic design supports your body perfectly, while the plush padding ensures a cozy experience. Ideal for home use, it transforms your living space into a personal spa retreat.",
+    "category": "Furniture"
+  },
+  {
+    "image_id": "14",
+    "title": "Folding Door",
+    "detail_text": "Space-saving folding doors, perfect for modern interiors.",
+    "category": "Doors"
+  },
+  {
+    "image_id": "15",
+    "title": "Sliding Door",
+    "detail_text": "Sleek sliding doors to maximize space and add a contemporary touch.",
+    "category": "Doors"
+  },
+  {
+    "image_id": "16",
+    "title": "Plywood Wood Door",
+    "detail_text": "Affordable and durable plywood wood doors for any room.",
+    "category": "Doors"
+  },
+  {
+    "image_id": "17",
+    "title": "Wpc Door",
+    "detail_text": "Eco-friendly WPC doors, resistant to moisture and wear.",
+    "category": "Doors"
+  },
+  {
+    "image_id": "18",
+    "title": "Veneer Wood Door",
+    "detail_text": "Elegant veneer wood doors with a refined finish.",
+    "category": "Doors"
+  },
+  {
+    "image_id": "19",
+    "title": "HDF Wooden Door",
+    "detail_text": "High-density fiberboard doors for enhanced durability.",
+    "category": "Doors"
+  },
+  {
+    "image_id": "20",
+    "title": "Solid Wood Door",
+    "detail_text": "Timeless solid wood doors crafted for longevity.",
+    "category": "Doors"
+  },
+  {
+    "image_id": "21",
+    "title": "Lighting Switch",
+    "detail_text": "Modern lighting switches for seamless control of your home's lighting.",
+    "category": "Lighting"
+  },
+  {
+    "image_id": "22",
+    "title": "EV Charging Station",
+    "detail_text": "Efficient EV charging stations for your electric vehicle.",
+    "category": "Electronics"
+  },
+  {
+    "image_id": "23",
+    "title": "Pool Table / Table Soccer / AI / ...",
+    "detail_text": "Fun and interactive gaming tables for your entertainment space. These tables are built with high-quality materials to ensure durability and smooth gameplay. Whether you enjoy pool, table soccer, or innovative AI features, this versatile furniture piece adds excitement to your home. Perfect for family fun or friendly competitions, it’s a great addition to any game room or living area.",
+    "category": "Furniture"
+  },
+  {
+    "image_id": "24",
+    "title": "PS5",
+    "detail_text": "The latest PlayStation 5 console for an unparalleled gaming experience.",
+    "category": "Electronics"
+  },
+  {
+    "image_id": "26",
+    "title": "Sauna Room / FAR Infrared Sauna",
+    "detail_text": "Relax in our FAR infrared sauna room, designed for wellness.",
+    "category": "Sauna Room / FAR Infrared Sauna"
+  },
+  {
+    "image_id": "27",
+    "title": "Shower Flooring",
+    "detail_text": "Non-slip shower flooring for safety and style.",
+    "category": "Flooring"
+  },
+  {
+    "image_id": "28",
+    "title": "Colorful Stone Coated Metal",
+    "detail_text": "Durable and vibrant stone-coated metal roofing.",
+    "category": "Flooring"
+  },
+  {
+    "image_id": "30",
+    "title": "Polished Glazed Tile",
+    "detail_text": "Shiny polished glazed tiles for a luxurious floor finish.",
+    "category": "Flooring"
+  },
+  {
+    "image_id": "31",
+    "title": "Eco-friendly Door",
+    "detail_text": "Sustainable doors made from eco-friendly materials.",
+    "category": "Doors"
+  },
+  {
+    "image_id": "32",
+    "title": "Container House",
+    "detail_text": "Modern container houses for affordable, modular living.",
+    "category": "Buildings"
+  },
+  {
+    "image_id": "33",
+    "title": "Track System / Accessories",
+    "detail_text": "Versatile track systems for lighting and decor.",
+    "category": "Lighting"
+  },
+  {
+    "image_id": "34",
+    "title": "Blinds",
+    "detail_text": "Stylish blinds to control light and enhance privacy. These blinds are designed with adjustable slats for precise light control and privacy settings. Made from durable materials, they resist fading and wear, ensuring long-term use. Perfect for any room, they add a modern touch while offering practical benefits for your home.",
+    "category": "Furniture"
+  },
+  {
+    "image_id": "35",
+    "title": "Panoramic Elevator",
+    "detail_text": "Scenic panoramic elevators for a luxurious ride.",
+    "category": "Elevators"
+  },
+  {
+    "image_id": "36",
+    "title": "Escalator",
+    "detail_text": "Reliable escalators for commercial and public spaces.",
+    "category": "Elevators"
+  },
+  {
+    "image_id": "37",
+    "title": "Home Elevator / Villa Elevator",
+    "detail_text": "Compact home elevators for multi-story villas.",
+    "category": "Elevators"
+  },
+  {
+    "image_id": "38",
+    "title": "Hospital Elevator",
+    "detail_text": "Specially designed elevators for hospital use.",
+    "category": "Elevators"
+  },
+  {
+    "image_id": "39",
+    "title": "Building structure",
+    "detail_text": "Robust building structures for various applications.",
+    "category": "Buildings"
+  },
+  {
+    "image_id": "40",
+    "title": "Transportation Buildings",
+    "detail_text": "Structures designed for transportation hubs.",
+    "category": "Buildings"
+  },
+  {
+    "image_id": "41",
+    "title": "Industrial",
+    "detail_text": "Industrial-grade products for heavy-duty use.",
+    "category": "Buildings"
+  },
+  {
+    "image_id": "42",
+    "title": "Commercial Buildings",
+    "detail_text": "Solutions for constructing commercial buildings.",
+    "category": "Buildings"
+  },
+  {
+    "image_id": "43",
+    "title": "Residential Buildings",
+    "detail_text": "Products for residential building projects.",
+    "category": "Buildings"
+  },
+  {
+    "image_id": "44",
+    "title": "Outdoor wall lamp",
+    "detail_text": "Weather-resistant outdoor wall lamps for your exterior.",
+    "category": "Lighting"
+  },
+  {
+    "image_id": "45",
+    "title": "Track Light",
+    "detail_text": "Adjustable track lighting for focused illumination.",
+    "category": "Lighting"
+  },
+  {
+    "image_id": "46",
+    "title": "Water Vapor Fireplace",
+    "detail_text": "Modern water vapor fireplaces for a stunning effect.",
+    "category": "Fireplaces"
+  },
+  {
+    "image_id": "47",
+    "title": "Electric Fireplace",
+    "detail_text": "Convenient electric fireplaces for cozy warmth.",
+    "category": "Fireplaces"
+  },
+  {
+    "image_id": "48",
+    "title": "Wood-Burning Fireplace",
+    "detail_text": "Traditional wood-burning fireplaces for a rustic charm.",
+    "category": "Fireplaces"
+  },
+  {
+    "image_id": "49",
+    "title": "Dining table",
+    "detail_text": "A sturdy and stylish dining table, perfect for family gatherings and dinner parties. Crafted with high-quality materials, this table offers ample space for large meals and entertaining guests. Its sleek design complements both modern and traditional interiors, adding a focal point to your dining area. The robust construction ensures durability, while the smooth finish makes it easy to clean and maintain for years of use.",
+    "category": "Furniture",
+    "related_images": ["sc1", "sc2", "sc3", "sc4"],
+    "bigimages": ["big1", "big2", "big3", "big4"]
+  },
+  {
+    "image_id": "50",
+    "title": "Sofa bed",
+    "detail_text": "A versatile sofa bed that combines comfort and functionality, ideal for small spaces. This dual-purpose piece transforms effortlessly from a cozy sofa into a spacious bed, perfect for overnight guests. Upholstered in durable, soft fabric, it offers plush seating during the day and a supportive sleeping surface at night. Its compact design saves space without compromising style, making it a practical addition to any home.",
+    "category": "Furniture",
+    "related_images": ["sc9", "sc10", "sc11", "sc12"],
+    "bigimages": ["big8", "big9", "big10"]
+  },
+  {
+    "image_id": "51",
+    "title": "Side Table",
+    "detail_text": "A sleek side table to complement your living space, perfect for lamps or decor. Crafted with a minimalist design, this table fits effortlessly beside sofas or chairs, adding both functionality and elegance. Its sturdy build supports a variety of items, from books to decorative pieces, while the smooth surface is easy to wipe down. Available in multiple finishes, it adapts to any interior style with ease.",
+    "category": "Furniture"
+  },
+  {
+    "image_id": "52",
+    "title": "Out Door Furniture",
+    "detail_text": "Durable outdoor furniture designed to withstand the elements, ideal for patios and gardens. Made from weather-resistant materials, this furniture maintains its beauty through rain, sun, and wind. Its ergonomic design ensures comfort for lounging or dining outdoors, while the sturdy construction supports long-term use. Perfect for enhancing your outdoor living space with style and resilience.",
+    "category": "Furniture",
+    "related_images": ["sc5", "sc6", "sc7", "sc8"],
+    "bigimages": ["big5", "big6", "big7"]
+  },
+  {
+    "image_id": "53",
+    "title": "Sofa",
+    "detail_text": "A comfortable and elegant sofa, perfect for lounging in any living room. Upholstered in premium fabric, this sofa offers plush cushioning and strong support for hours of relaxation. Its versatile design fits various decor styles, from contemporary to classic, making it a centerpiece of your space. Built with a solid frame, it promises durability and comfort for years to come.",
+    "category": "Furniture",
+    "related_images": ["sc13", "sc14", "sc15", "sc16"],
+    "bigimages": ["big11", "big12", "big13", "big14"]
+  },
+  {
+    "image_id": "54",
+    "title": "Hotel Guest Room Furniture",
+    "detail_text": "Premium furniture designed for hotel guest rooms, offering style and durability. This collection includes beds, nightstands, and desks crafted to meet the needs of hospitality settings. The elegant finishes and ergonomic designs ensure guest comfort, while the robust materials withstand heavy use. Perfect for creating a welcoming and functional environment in any hotel or lodging facility.",
+    "category": "Furniture",
+    "related_images": ["sc14", "sc18", "sc19", "sc20"],
+    "bigimages": ["big15", "big16", "big17", "big18", "big19", "big20", "big21"]
+  },
+  {
+    "image_id": "55",
+    "title": "Office Furniture",
+    "detail_text": "Ergonomic and modern office furniture to enhance productivity and comfort. This collection features adjustable chairs, spacious desks, and storage solutions designed to support long work hours. Crafted with high-quality materials, it offers durability and a professional look. Its customizable options allow you to create an efficient and stylish workspace tailored to your needs.",
+    "category": "Furniture",
+    "related_images": ["sc21", "sc22", "sc23", "sc24"],
+    "bigimages": ["big22", "big23", "big24", "big25", "big26"]
+  },
+  {
+    "image_id": "56",
+    "title": "Childeren's Furniture",
+    "detail_text": "Safe and colorful furniture designed specifically for children's rooms. Made with non-toxic materials, this furniture ensures a healthy environment for kids. Its vibrant designs and playful shapes encourage creativity, while the sturdy construction supports active use. Easy to assemble and clean, it’s perfect for growing families looking to furnish a fun and secure space.",
+    "category": "Furniture",
+    "bigimages": [
+      "big27",
+      "big28",
+      "big29",
+      "big30",
+      "big31",
+      "big32",
+      "big33",
+      "big34"
+    ]
+  }
+]
