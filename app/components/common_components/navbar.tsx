@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,9 +42,9 @@ export default function Navbar() {
           </div>
           <div className="flex w-3/4 justify-around relative">
             <div className="group">
-              <a href="/" className="cursor-pointer hover:text-gray-200">
-                Home
-              </a>
+              <Link className="cursor-pointer hover:text-gray-200" href={"/"}>
+                <h1>Home</h1>
+              </Link>
             </div>
             <div className="group">
               <a

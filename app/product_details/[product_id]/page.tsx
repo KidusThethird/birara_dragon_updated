@@ -1,7 +1,7 @@
 // app/product_details/[product_id]/page.tsx
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react"; // Import useEffect
 import productsData from "../../../lib/products.json"; // Adjust the path based on your project structure
 import Navbar from "@/app/components/common_components/navbar";
 import ProductsHero from "@/app/herosections/products_hero";
@@ -27,6 +27,29 @@ export default function ProductDetails({
   // Find the product matching the product_id
   const product = productsData.find((p: Product) => p.image_id === product_id);
 
+  // State to manage the currently displayed main image (moved to top)
+  const [mainImage, setMainImage] = useState<string>(
+    `/products/${product_id}.jpeg`
+  ); // Default to .jpeg
+
+  // Handler to update the main image when a related image is clicked (moved to top)
+  const handleRelatedImageClick = (relatedImage: string) => {
+    setMainImage(`/productscroll/${relatedImage}.jpeg`); // Update main image to the selected related image
+  };
+
+  // Determine the initial main image extension (default to .jpeg, handle .png for specific IDs)
+  const imageExtension = [16, 23, 43].includes(parseInt(product_id))
+    ? "png"
+    : "jpeg";
+  const initialImageSrc = `/products/${product_id}.${imageExtension}`;
+
+  // Use useEffect to set the initial image only once when product or product_id changes
+  useEffect(() => {
+    if (product) {
+      setMainImage(initialImageSrc);
+    }
+  }, [product, product_id, initialImageSrc]); // Dependencies to trigger effect
+
   if (!product) {
     return (
       <div className="p-6 min-h-screen bg-gray-50">
@@ -40,20 +63,6 @@ export default function ProductDetails({
       </div>
     );
   }
-
-  // Determine the initial main image extension (default to .jpeg, handle .png for specific IDs)
-  const imageExtension = [16, 23, 43].includes(parseInt(product_id))
-    ? "png"
-    : "jpeg";
-  const initialImageSrc = `/products/${product_id}.${imageExtension}`;
-
-  // State to manage the currently displayed main image
-  const [mainImage, setMainImage] = useState<string>(initialImageSrc);
-
-  // Handler to update the main image when a related image is clicked
-  const handleRelatedImageClick = (relatedImage: string) => {
-    setMainImage(`/productscroll/${relatedImage}.jpeg`); // Update main image to the selected related image
-  };
 
   return (
     <div className="min-h-screen bg-gray-50">
