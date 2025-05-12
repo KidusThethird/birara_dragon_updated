@@ -135,7 +135,8 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Your Company. All rights reserved.
+            © {new Date().getFullYear()} Birara Dragon Bridge. All rights
+            reserved.
           </p>
         </div>
       </div>

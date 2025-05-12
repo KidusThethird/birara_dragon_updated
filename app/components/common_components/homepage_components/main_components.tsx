@@ -56,7 +56,7 @@ const items = [
     text: "Wall Decoration",
   },
   {
-    id: 23,
+    id: 24,
     image: "/homepageImages/23.jpeg", // Updated to match the pattern
     text: "Home Appliance",
   },
