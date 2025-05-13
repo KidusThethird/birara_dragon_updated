@@ -1,42 +1,41 @@
-// app/components/AboutUs.tsx
 "use client";
 import React, { useEffect } from "react";
-import Image from "next/image";
 import Navbar from "../components/common_components/navbar";
+import { Activity, LifeBuoy, Footprints, Home } from "lucide-react";
 
-// Sample data for industry highlights
+// Sample data for industry highlights with assigned icons
 const industries = [
   {
     id: 1,
     title: "Medical Supplies",
     description:
       "High-quality scrubs and equipment for healthcare professionals.",
-    image: "/icons/medical.png", // Replace with your medical icon/image path
+    icon: Activity,
   },
   {
     id: 2,
     title: "Machinery & Electronics",
     description:
       "Latest automobiles and heavy machinery with cutting-edge technology.",
-    image: "/icons/machinery.png", // Replace with your machinery icon/image path
+    icon: LifeBuoy,
   },
   {
     id: 3,
     title: "Fashion",
     description: "Stylish clothing, accessories, and 100% human hair products.",
-    image: "/icons/fashion.png", // Replace with your fashion icon/image path
+    icon: Footprints,
   },
   {
     id: 4,
     title: "Furnishings",
     description: "Modern furnishings for residential and commercial spaces.",
-    image: "/icons/furniture.png", // Replace with your furniture icon/image path
+    icon: Home,
   },
   {
     id: 5,
     title: "Consulting",
     description: "Expert services to optimize operations and boost efficiency.",
-    image: "/icons/consulting.png", // Replace with your consulting icon/image path
+    icon: Activity, // Reusing Activity as only 4 icons are available
   },
 ];
 
@@ -54,18 +53,28 @@ export default function AboutUs() {
   }, []);
 
   return (
-    <div>
+    <div className="">
       <Navbar />
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen  bg-gray-50">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-blue-600 to-sky-500 text-white py-20 text-center">
+        <section className="bg-gradient-to-r pt-40 from-sky-800 to-sky-900 text-white py-20 text-center">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+            <h1 className="text-2xl md:text-3xl font-extrabold mb-4">
               About Us
             </h1>
-            <p className="text-lg md:text-xl max-w-3xl mx-auto">
-              Discover the heart of Birara Dragon Bridge General Trading, where
-              quality and innovation meet across diverse industries.
+            <p className="text-lg md: max-w-3xl mx-auto">
+              At Birara Dragon Bridge General Trading, we are dedicated to
+              delivering high-quality products and services across multiple
+              industries. Our extensive offerings include essential medical
+              supplies, such as scrubs and equipment, to support healthcare
+              professionals. In the machinery and electronics sector, we provide
+              the latest automobiles and heavy machinery, ensuring access to
+              cutting-edge technology. Our fashion line features stylish
+              clothing, accessories, and 100% human hair products, catering to
+              diverse customer preferences. We also supply modern furnishings
+              for both residential and commercial spaces. Additionally, our
+              expert consulting services aim to optimize operations, with a
+              strong commitment to quality and customer satisfaction.
             </p>
           </div>
         </section>
@@ -80,19 +89,10 @@ export default function AboutUs() {
               {industries.map((industry) => (
                 <div
                   key={industry.id}
-                  className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center"
+                  className="bg-white hover:scale-105 cursor-pointer rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center"
                 >
                   <div className="mb-4 w-20 h-20 relative">
-                    <Image
-                      src={industry.image}
-                      alt={`${industry.title} icon`}
-                      width={80}
-                      height={80}
-                      className="object-contain"
-                      onError={(e) =>
-                        (e.currentTarget.src = "/placeholder.jpg")
-                      } // Fallback image
-                    />
+                    <industry.icon size={80} className="mx-auto text-sky-900" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">
                     {industry.title}

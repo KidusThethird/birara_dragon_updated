@@ -2,11 +2,13 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,25 +69,26 @@ export default function Navbar() {
         {/* Desktop Menu (Hidden on Mobile) */}
         <div className="hidden sm:block w-3/4 items-center">
           <div className="flex justify-end px-10 items-center gap-2">
-            <Image
-              src="/icons/email.png"
-              width={20}
-              height={20}
-              alt="Email icon"
-            />
-            <h1>Email</h1>
+            <h1 className="text-sky-900">.</h1>
           </div>
           <div className="sm:flex w-3/4 items-center">
             <div className="flex w-3/4 justify-around relative">
               <div className="group">
-                <Link className="cursor-pointer hover:text-gray-200" href="/">
+                <Link
+                  className={`cursor-pointer hover:text-gray-200 ${
+                    pathname === "/" ? "underline" : ""
+                  }`}
+                  href="/"
+                >
                   <h1>Home</h1>
                 </Link>
               </div>
               <div className="group">
                 <Link
                   href="/products"
-                  className="cursor-pointer hover:text-gray-200"
+                  className={`cursor-pointer hover:text-gray-200 ${
+                    pathname.startsWith("/products") ? "underline" : ""
+                  }`}
                 >
                   Products
                 </Link>
@@ -109,19 +112,23 @@ export default function Navbar() {
               </div>
               <div className="group">
                 <Link
-                  className="cursor-pointer hover:text-gray-200"
+                  className={`cursor-pointer hover:text-gray-200 ${
+                    pathname === "/team" ? "underline" : ""
+                  }`}
                   href="/team"
                 >
                   <h1>Our Team</h1>
                 </Link>
               </div>
               <div className="group">
-                <h1 className="cursor-pointer hover:text-gray-200">About</h1>
-                <div className="absolute hidden group-hover:block bg-sky-700 text-white py-2 rounded-md shadow-lg min-w-[120px]">
-                  <a href="/about" className="block px-4 py-2 hover:bg-sky-800">
-                    About Us
-                  </a>
-                </div>
+                <Link
+                  className={`cursor-pointer hover:text-gray-200 ${
+                    pathname === "/about" ? "underline" : ""
+                  }`}
+                  href="/about"
+                >
+                  <h1>About</h1>
+                </Link>
               </div>
             </div>
           </div>
@@ -168,7 +175,7 @@ export default function Navbar() {
         ></div>
 
         {/* Menu Panel */}
-        <div className="relative w-3/4 h-full bg-sky-600 p-6 shadow-lg">
+        <div className="relative w-3/4 h-full bg-sky-900 p-6 shadow-lg">
           <button
             onClick={() => setIsMobileMenuOpen(false)}
             className="text-white mb-6 focus:outline-none"
@@ -191,7 +198,9 @@ export default function Navbar() {
           <nav className="flex flex-col space-y-6">
             <Link
               href="/"
-              className="text-xl text-white hover:text-gray-200"
+              className={`text-xl text-white hover:text-gray-200 ${
+                pathname === "/" ? "underline" : ""
+              }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
@@ -199,7 +208,9 @@ export default function Navbar() {
             <div>
               <button
                 onClick={() => setIsProductsOpen(!isProductsOpen)}
-                className="text-xl text-white hover:text-gray-200 focus:outline-none flex justify-between items-center w-full"
+                className={`text-xl text-white hover:text-gray-200 focus:outline-none flex justify-between items-center w-full ${
+                  pathname.startsWith("/products") ? "underline" : ""
+                }`}
               >
                 Products
                 <svg
@@ -245,14 +256,18 @@ export default function Navbar() {
             </div>
             <Link
               href="/team"
-              className="text-xl text-white hover:text-gray-200"
+              className={`text-xl text-white hover:text-gray-200 ${
+                pathname === "/team" ? "underline" : ""
+              }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Our Team
             </Link>
             <Link
               href="/about"
-              className="text-xl text-white hover:text-gray-200"
+              className={`text-xl text-white hover:text-gray-200 ${
+                pathname === "/about" ? "underline" : ""
+              }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About

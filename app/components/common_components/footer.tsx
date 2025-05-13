@@ -2,18 +2,21 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { Phone, MapPin } from "lucide-react";
 
 // Sample data for footer links
 const footerLinks = {
   about: [
     { name: "Our Story", href: "/about" },
     { name: "Team", href: "/team" },
-    { name: "Careers", href: "/careers" },
+    { name: "Products", href: "/products" },
   ],
   services: [
-    { name: "Interior Design", href: "/services/interior-design" },
-    { name: "Custom Furniture", href: "/services/custom-furniture" },
-    { name: "Consulting", href: "/services/consulting" },
+    { name: "Healthcare & Medical Solutions", href: "" },
+    { name: "Automotive & Industrial Solutions", href: "" },
+    { name: "Fashion & Lifestyle Products", href: "" },
+    { name: "Home, Office & Business Services", href: "" },
   ],
   contact: [
     { name: "Email Us", href: "mailto:info@example.com" },
@@ -44,21 +47,27 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="bg-sky-900 text-white py-12">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="  mx-auto px-4 sm:px-6 lg:px-8">
         {/* Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info / Logo */}
           <div className="mb-8 md:mb-0">
-            <h2 className="text-2xl font-bold mb-4">Birara Dragon Bridge</h2>
+            <Image
+              src="/logo/whitelogo.png"
+              width={150}
+              height={150}
+              alt="Company logo"
+            />
+            <h2 className=" font-bold mb-4">Birara Dragon Bridge</h2>
             <p className="text-gray-400">
-              Crafting beautiful spaces with innovative design and quality
-              furniture. Let us bring your vision to life.
+              Our mission is to enhance lives and empower businesses by
+              delivering high-quality products
             </p>
           </div>
 
           {/* About Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">About</h3>
+            <h3 className="text-lg mx-auto font-semibold mb-4">About</h3>
             <ul className="space-y-2">
               {footerLinks.about.map((link) => (
                 <li key={link.name}>
@@ -91,20 +100,22 @@ export default function Footer() {
           </div>
 
           {/* Contact Links */}
-          <div>
+          <div className="space-y-4">
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <ul className="space-y-2">
-              {footerLinks.contact.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="text-gray-400 hover:text-white hover:underline transition-colors duration-200"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div className="flex space-x-4">
+              <Phone />{" "}
+              <div>
+                {" "}
+                <h1>+8619700356386</h1> <h1>+8613098393670</h1>
+              </div>
+            </div>
+            <div className="flex space-x-4">
+              <MapPin size={50} />{" "}
+              <h1 className="col-span-3">
+                China: 深圳市南山区同方科兴科学园F区3201 Hongkong Branch: 2301,
+                BAYFIELD BUILDING 99 HENNESSY ROAD WANCHAI
+              </h1>
+            </div>
           </div>
         </div>
 
