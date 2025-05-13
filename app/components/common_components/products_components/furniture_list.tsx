@@ -1,4 +1,3 @@
-// components/ProductsPage.tsx
 "use client";
 import Image from "next/image";
 import { useState } from "react";
@@ -22,35 +21,92 @@ export default function FurniturePage() {
     setOpenDropdown(openDropdown === category ? null : category);
   };
 
-  // Sample menu data
+  // Menu data
   const menuItems = [
     {
       category: "Furniture",
       subItems: [
-        "Outdoor Furniture",
-        "Dining Table",
-        "Side Bed",
-        "Sofa",
-        "Hotel Guest Room Furniture",
-        "Office Furniture",
-        "Childeren's Furniture",
+        { name: "Outdoor Furniture", productId: "52" },
+        { name: "Dining Table", productId: "49" },
+        { name: "Sofa Bed", productId: "50" },
+        { name: "Sofa", productId: "53" },
+        { name: "Hotel Guest Room Furniture", productId: "54" },
+        { name: "Office Furniture", productId: "55" },
+        { name: "Childeren's Furniture", productId: "56" },
       ],
     },
-    { category: "Flooring", subItems: ["Hardwood", "Tile", "Vinyl"] },
-    { category: "Smart lock", subItems: [] },
-    { category: "Sanitary ware", subItems: ["Toilets", "Sinks", "Faucets"] },
     {
-      category: "Sauna Room / FAR Infrared Sauna",
-      subItems: ["Sauna Kits", "Infrared Units"],
+      category: "Medical Supplies & Equipment",
+      subItems: [
+        { name: "Scrubs & Medical Apparel", productId: "100" },
+        { name: "Surgical Instruments", productId: "101" },
+        { name: "Patient Monitoring Devices", productId: "102" },
+        { name: "Diagnostic Imaging Equipment", productId: "103" },
+        { name: "Disposable Medical Supplies", productId: "104" },
+        { name: "Hospital Furniture & Beds", productId: "105" },
+      ],
     },
-    { category: "Room", subItems: [] },
+    {
+      category: "Cars, Machinery & Electronics",
+      subItems: [
+        { name: "Passenger Vehicles", productId: "106" },
+        { name: "Commercial Trucks & Vans", productId: "107" },
+        { name: "Construction Machinery", productId: "108" },
+        { name: "Home & Office Electronics", productId: "109" },
+        { name: "Industrial Equipment", productId: "110" },
+        { name: "Car Tires & LED Lighting", productId: "111" },
+      ],
+    },
+    {
+      category: "Fashion, Apparel & Human Hair",
+      subItems: [
+        { name: "Women’s Fashion", productId: "112" },
+        { name: "Men’s Fashion", productId: "113" },
+        { name: "Accessories & Footwear", productId: "114" },
+        { name: "Human Hair Extensions & Wigs", productId: "115" },
+        { name: "Children’s Apparel", productId: "116" },
+      ],
+    },
+    {
+      category: "Home, Office, Commercial Furnishings & Building Materials",
+      subItems: [
+        { name: "Home Furniture", productId: "117" },
+        { name: "Office Desks & Seating", productId: "118" },
+        { name: "Construction Materials", productId: "119" },
+        { name: "Home Decor & Lighting", productId: "120" },
+        { name: "Commercial Fixtures & Displays", productId: "121" },
+      ],
+    },
+    {
+      category: "General Trading & Wholesale Products",
+      subItems: [
+        { name: "Consumer Electronics", productId: "122" },
+        { name: "Household Goods", productId: "123" },
+        { name: "Industrial Raw Materials", productId: "124" },
+        { name: "Agricultural Produce", productId: "125" },
+        { name: "Cosmetic & Skincare Products", productId: "126" },
+      ],
+    },
+    {
+      category: "Business Consulting & Sourcing Services",
+      subItems: [
+        { name: "Market Entry Consulting", productId: "127" },
+        { name: "Supplier & Vendor Sourcing", productId: "128" },
+        { name: "Supply Chain Management", productId: "129" },
+        { name: "Quality Control Services", productId: "130" },
+        { name: "Export & Import Support", productId: "131" },
+      ],
+    },
+    {
+      category: "Coffee",
+      subItems: [],
+    },
   ];
 
   // New products array with only furniture items, starting from /products/furniture/49.jpeg
   const products = [
     { name: "Dining table", image: "/products/furniture/49.jpeg" },
     { name: "Sofa bed", image: "/products/furniture/50.jpeg" },
-
     { name: "Side Table", image: "/products/furniture/51.jpeg" },
     { name: "Out Door Furniture", image: "/products/furniture/52.jpeg" },
     { name: "Sofa", image: "/products/furniture/53.png" },
@@ -110,9 +166,16 @@ export default function FurniturePage() {
                   onClick={() => toggleDropdown(item.category)}
                   className="w-full text-left text-gray-800 hover:bg-gray-200 p-2 flex justify-between items-center"
                 >
-                  <a href={`${item.category.toLowerCase()}`}>
+                  <Link
+                    href={`/products/${item.category
+                      .toLowerCase()
+                      .replace(/ \/ /g, "-")
+                      .replace(/ & /g, "-")
+                      .replace(/, /g, "-")
+                      .replace(/ /g, "-")}`}
+                  >
                     <span>{item.category}</span>
-                  </a>
+                  </Link>
                   {item.subItems.length > 0 && (
                     <svg
                       className={`w-4 h-4 transform transition-transform ${
@@ -135,13 +198,13 @@ export default function FurniturePage() {
                 {openDropdown === item.category && item.subItems.length > 0 && (
                   <ul className="pl-4 mt-2 space-y-1">
                     {item.subItems.map((subItem) => (
-                      <li key={subItem}>
-                        <a
-                          href="#"
+                      <li key={subItem.productId}>
+                        <Link
+                          href={`/product_details/${subItem.productId}`}
                           className="block text-gray-600 hover:text-gray-800 p-2"
                         >
-                          {subItem}
-                        </a>
+                          {subItem.name}
+                        </Link>
                       </li>
                     ))}
                   </ul>
