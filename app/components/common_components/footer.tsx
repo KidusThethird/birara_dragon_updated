@@ -2,7 +2,6 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 // Sample data for footer links
 const footerLinks = {
@@ -28,17 +27,17 @@ const socialLinks = [
   {
     name: "Facebook",
     href: "https://facebook.com",
-    icon: "/icons/facebook.png",
+    //  icon: "/icons/facebook.png",
   },
   {
     name: "Twitter",
     href: "https://twitter.com",
-    icon: "/icons/twitter.png",
+    //  icon: "/icons/twitter.png",
   },
   {
     name: "Instagram",
     href: "https://instagram.com",
-    icon: "/icons/instagram.png",
+    // icon: "/icons/instagram.png",
   },
 ];
 
@@ -121,14 +120,14 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-transform duration-200 hover:scale-110"
               >
-                <Image
+                {/* <Image
                   src={social.icon}
                   alt={`${social.name} icon`}
                   width={24}
                   height={24}
                   className="w-6 h-6"
                   onError={(e) => (e.currentTarget.src = "/placeholder.jpg")} // Fallback image
-                />
+                /> */}
               </Link>
             ))}
           </div>

@@ -5,24 +5,34 @@ import Image from "next/image";
 export default function Hero() {
   const slides = [
     {
-      image: "/hero/hero1.jpeg",
-      title: "Providing One-stop Solutions",
-      description: "European design, Master Bedroom, Living Room, Bathroom",
+      image: "/hero/img05.jpg",
+      title: "Medical Supplies & Equipment",
+      description:
+        "Supplying a wide range of medical products, including medial diagnostic machineries, premium-quality scrubs for top brands, medical devices, and essential equipment for hospitals and clinics.",
     },
     {
-      image: "/hero/hero2.jpeg",
-      title: "Unmatched Quality",
-      description: "Premium products",
+      image: "/hero/img07.jpg",
+      title: "Cars, Machinery & Electronics",
+      description:
+        "Sourcing and providing automobiles, heavy machinery, and electronics for industrial, commercial, and personal use, including advanced technology and gadgets.",
     },
     {
       image: "/hero/hero3.jpeg",
-      title: "Join Community",
-      description: "Be part of us",
+      title: "Furniture",
+      description:
+        "Offering a diverse range of high-quality furniture for homes, offices, and commercial spaces, including modern, classic, and custom designs to suit every style and need.",
     },
     {
       image: "/hero/hero4.jpeg",
-      title: "Empower Future",
-      description: "Innovate today",
+      title: "Building Materials",
+      description:
+        "Providing durable, high-quality building materials like cement, steel, and timber for construction and renovation projects.",
+    },
+    {
+      image: "/hero/img01.jpg",
+      title: "Coffee Beans and oil seeds Importer",
+      description:
+        "We specialize in the import of exceptional Ethiopian coffee and a range of high-quality oil seeds.",
     },
   ];
 
@@ -37,7 +47,7 @@ export default function Hero() {
   }, [slides.length]);
 
   return (
-    <div className="relative w-full h-[600px] overflow-hidden">
+    <div className="relative w-full h-[600px] overflow-hidden ">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -52,11 +62,11 @@ export default function Hero() {
             className="object-cover"
             priority={index === 0} // Prioritize the first image for faster loading
           />
-          <div className="mx-9 absolute top-0 left-0 h-full w-1/2  flex flex-col justify-center text-white pl-6 pr-4">
-            <h1 className="text-xl md:text-4xl  mb-2 text-shadow-lg">
+          <div className="mx-9 absolute top-0 left-0 h-full w-1/2  flex flex-col justify-center text-sky-900 pl-6 pr-4">
+            <h1 className="text-3xl sm:text-5xl font-semibold font-serif">
               {slide.title}
             </h1>
-            <p className="text-lg md:text-6xl font-bold text-shadow-lg">
+            <p className="text-xl text-white sm:text-xl ">
               {slide.description}
             </p>
           </div>

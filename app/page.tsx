@@ -1,3 +1,4 @@
+import FourSection from "./components/common_components/homepage_components/four_section";
 import Hero from "./components/common_components/homepage_components/hero";
 import Mainservices from "./components/common_components/homepage_components/main_components";
 import Ourservices from "./components/common_components/homepage_components/ourservices";
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Ourservices />
+      <FourSection />
       <Mainservices />
     </div>
   );

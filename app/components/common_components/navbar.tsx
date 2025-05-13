@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <div
       className={`fixed top-0 left-0 w-full text-white py-5 z-50 transition-colors duration-300 ${
-        isScrolled ? "bg-sky-600" : "bg-transparent"
+        isScrolled ? "bg-sky-900" : "bg-transparent"
       }`}
     >
       <div className="justify-between flex w-full max-w-7xl mx-auto px-4">

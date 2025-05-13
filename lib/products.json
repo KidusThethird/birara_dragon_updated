@@ -348,5 +348,204 @@
       "big33",
       "big34"
     ]
+  },
+  {
+    "image_id": "100",
+    "title": "Scrubs & Medical Apparel",
+    "detail_text": "Comfortable, durable scrubs and lab coats, designed for long shifts, offering healthcare professionals both style and functionality",
+    "category": "Medical"
+  },
+  {
+    "image_id": "101",
+    "title": "Surgical Instruments",
+    "detail_text": "Precision tools built for demanding surgical environments, including scalpels, forceps, and specialized instruments for complex procedures.",
+    "category": "Medical"
+  },
+  {
+    "image_id": "102",
+    "title": "Patient Monitoring Devices",
+    "detail_text": "Advanced devices for real-time monitoring, from vital sign monitors to ECG machines, essential for patient care.",
+    "category": "Medical"
+  },
+  {
+    "image_id": "103",
+    "title": "Diagnostic Imaging Equipment",
+    "detail_text": "High-end MRI, ultrasound, and X-ray machines, providing accurate diagnostic support to healthcare facilities.",
+    "category": "Medical"
+  },
+  {
+    "image_id": "104",
+    "title": "Disposable Medical Supplies",
+    "detail_text": "Essential items like gloves, masks, syringes, and IV bags, ensuring a steady supply for safe and sterile practices.",
+    "category": "Medical"
+  },
+  {
+    "image_id": "105",
+    "title": "Hospital Furniture & Beds",
+    "detail_text": "Adjustable hospital beds, stretchers, and carts designed to maximize patient comfort and support efficient workflows.",
+    "category": "Medical"
+  },
+  {
+    "image_id": "106",
+    "title": "Passenger Vehicles",
+    "detail_text": "A wide selection of vehicles, from economical compact cars to high-end luxury models, meeting both personal and fleet needs.",
+    "category": "Cars, Machines & Electronics"
+  },
+  {
+    "image_id": "107",
+    "title": "Commercial Trucks & Vans",
+    "detail_text": "Sturdy, high-capacity vehicles ideal for business logistics, supporting efficient transport of goods.",
+    "category": "Cars, Machines & Electronics"
+  },
+  {
+    "image_id": "108",
+    "title": "Construction Machinery",
+    "detail_text": "Heavy-duty machinery such as excavators, bulldozers, and cranes, providing reliable solutions for large-scale construction projects.",
+    "category": "Cars, Machines & Electronics"
+  },
+  {
+    "image_id": "109",
+    "title": "Home & Office Electronics",
+    "detail_text": "The latest in tech, including laptops, tablets, and smart home devices, for enhanced connectivity and productivity.",
+    "category": "Cars, Machines & Electronics"
+  },
+  {
+    "image_id": "110",
+    "title": "Industrial Equipment",
+    "detail_text": "Specialized equipment for agriculture, manufacturing, and construction, from generators to assembly-line tools.",
+    "category": "Cars, Machines & Electronics"
+  },
+  {
+    "image_id": "111",
+    "title": "Car Tires & LED Lighting",
+    "detail_text": "Durable car tires for various vehicle types, alongside energy-efficient LED lighting solutions for residential, commercial, and industrial applications.",
+    "category": "Cars, Machines & Electronics"
+  },
+
+  {
+    "image_id": "112",
+    "title": "Women’s Fashion",
+    "detail_text": "Trend-driven women’s clothing, from casual wear to elegant evening gowns, appealing to a wide range of tastes and preferences.",
+    "category": "Fashion"
+  },
+  {
+    "image_id": "113",
+    "title": "Men’s Fashion",
+    "detail_text": "From business suits to laid-back weekend styles, our men’s fashion line offers both quality and versatility.",
+    "category": "Fashion"
+  },
+  {
+    "image_id": "114",
+    "title": "Accessories & Footwear",
+    "detail_text": "Fashion-forward handbags, shoes, and jewelry, catering to style-conscious consumers looking to complete their outfits.",
+    "category": "Fashion"
+  },
+  {
+    "image_id": "115",
+    "title": "Human Hair Extensions & Wigs",
+    "detail_text": "Human Hair Extensions & Wigs",
+    "category": "Fashion"
+  },
+  {
+    "image_id": "116",
+    "title": "Human Hair Extensions & Wigs",
+    "detail_text": "Comfortable, stylish clothing for kids, made with durability in mind for active wear at school and play.",
+    "category": "Fashion"
+  },
+  {
+    "image_id": "117",
+    "title": "Home Furniture",
+    "detail_text": "Cozy sofas, elegant dining sets, and bedroom essentials, all designed to elevate the ambiance of any home space.",
+    "category": "Home, Office, Commercial Furnishings & Building Materials"
+  },
+  {
+    "image_id": "118",
+    "title": "Office Desks & Seating",
+    "detail_text": "Ergonomically designed office furniture that supports productivity and comfort for home and commercial offices alike.",
+    "category": "Home, Office, Commercial Furnishings & Building Materials"
+  },
+  {
+    "image_id": "119",
+    "title": "Construction Materials",
+    "detail_text": "High-quality materials including tiles, wood, cement, and steel, ensuring durability and reliability for any building project.",
+    "category": "Home, Office, Commercial Furnishings & Building Materials"
+  },
+  {
+    "image_id": "120",
+    "title": "Home Decor & Lighting",
+    "detail_text": "Stylish decor items, including LED lighting, rugs, and wall art, adding sophistication to personal and commercial spaces.",
+    "category": "Home, Office, Commercial Furnishings & Building Materials"
+  },
+  {
+    "image_id": "121",
+    "title": "Commercial Fixtures & Displays",
+    "detail_text": "Customizable displays and fixtures for retail environments, designed to enhance product visibility and customer engagement.",
+    "category": "Home, Office, Commercial Furnishings & Building Materials"
+  },
+  {
+    "image_id": "122",
+    "title": "Consumer Electronics",
+    "detail_text": "A wide array of popular gadgets and electronics, from smartphones and tablets to headphones and wearable tech.",
+    "category": "General Trading & Wholesale Products"
+  },
+
+  {
+    "image_id": "123",
+    "title": "Household Goods",
+    "detail_text": "Daily essentials such as kitchenware, cleaning products, and organization tools, available for wholesale and retail.",
+    "category": "General Trading & Wholesale Products"
+  },
+  {
+    "image_id": "124",
+    "title": "Industrial Raw Materials",
+    "detail_text": "Industrial Raw Materials",
+    "category": "General Trading & Wholesale Products"
+  },
+  {
+    "image_id": "125",
+    "title": "Agricultural Produce",
+    "detail_text": "Fresh, organic options from staple grains to exotic fruits, perfect for wholesalers and direct consumers.",
+    "category": "General Trading & Wholesale Products"
+  },
+  {
+    "image_id": "126",
+    "title": "Cosmetic & Skincare Products",
+    "detail_text": "Fresh, organic options from staple grains to exotic fruits, perfect for wholesalers and direct consumers.",
+    "category": "General Trading & Wholesale Products"
+  },
+
+  {
+    "image_id": "127",
+    "title": "Market Entry Consulting",
+    "detail_text": "Expert guidance to help businesses enter new markets with confidence, from understanding local regulations to consumer insights.",
+    "category": "Business Consulting & Sourcing Services"
+  },
+
+  {
+    "image_id": "128",
+    "title": "Supplier & Vendor Sourcing",
+    "detail_text": "Reliable sourcing of high-quality products and materials from trusted global suppliers, including items like car tires and LED lighting.",
+    "category": "Business Consulting & Sourcing Services"
+  },
+
+  {
+    "image_id": "129",
+    "title": "Supply Chain Management",
+    "detail_text": "Efficient logistics solutions, ensuring the timely and cost-effective delivery of goods from origin to destination.",
+    "category": "Business Consulting & Sourcing Services"
+  },
+
+  {
+    "image_id": "130",
+    "title": "Quality Control Services",
+    "detail_text": "Comprehensive quality checks for all products, including medical equipment and consumer goods, to meet clients’ exact standards before shipment.",
+    "category": "Business Consulting & Sourcing Services"
+  },
+
+  {
+    "image_id": "131",
+    "title": "Export & Import Support",
+    "detail_text": "Assistance with customs clearance, documentation, and regulatory compliance, simplifying international trade for clients.",
+    "category": "Business Consulting & Sourcing Services"
   }
 ]
