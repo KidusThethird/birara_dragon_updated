@@ -9,17 +9,12 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import MenuSidebar from "../product_menu_list";
 
 export default function HomeOfficeList() {
-  // State to manage dropdown visibility
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   // State for pagination
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 12; // 12 products per page
-
-  const toggleDropdown = (category: string) => {
-    setOpenDropdown(openDropdown === category ? null : category);
-  };
 
   // Updated menu data to match ProductsPage.tsx/MedicalList.tsx
   const menuItems = [
@@ -32,7 +27,7 @@ export default function HomeOfficeList() {
         { name: "Sofa", productId: "53" },
         { name: "Hotel Guest Room Furniture", productId: "54" },
         { name: "Office Furniture", productId: "55" },
-        { name: "Childeren's Furniture", productId: "56" },
+        { name: "Children's Furniture", productId: "56" }, // Fixed typo
       ],
     },
     {
@@ -151,64 +146,7 @@ export default function HomeOfficeList() {
 
       <div className="flex flex-col md:flex-row min-h-screen">
         {/* Left Sidebar - Menu */}
-        <aside className="w-full md:w-1/4 bg-gray-100 p-6">
-          <h2 className="text-3xl font-bold text-white bg-blue-600 p-4 mb-4">
-            PRODUCTS
-          </h2>
-          <ul className="space-y-2">
-            {menuItems.map((item) => (
-              <li key={item.category}>
-                <button
-                  onClick={() => toggleDropdown(item.category)}
-                  className="w-full text-left text-gray-800 hover:bg-gray-200 p-2 flex justify-between items-center"
-                >
-                  <Link
-                    href={`/products/${item.category
-                      .toLowerCase()
-                      .replace(/ \/ /g, "-")
-                      .replace(/ & /g, "-")
-                      .replace(/, /g, "-")
-                      .replace(/ /g, "-")}`}
-                  >
-                    <span>{item.category}</span>
-                  </Link>
-                  {item.subItems.length > 0 && (
-                    <svg
-                      className={`w-4 h-4 transform transition-transform ${
-                        openDropdown === item.category ? "rotate-180" : ""
-                      }`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  )}
-                </button>
-                {openDropdown === item.category && item.subItems.length > 0 && (
-                  <ul className="pl-4 mt-2 space-y-1">
-                    {item.subItems.map((subItem) => (
-                      <li key={subItem.productId}>
-                        <Link
-                          href={`/product_details/${subItem.productId}`}
-                          className="block text-gray-600 hover:text-gray-800 p-2"
-                        >
-                          {subItem.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
-          </ul>
-        </aside>
+        <MenuSidebar menuItems={menuItems} />
 
         {/* Right Content - Product Grid */}
         <main className="w-full md:w-3/4 p-6">
