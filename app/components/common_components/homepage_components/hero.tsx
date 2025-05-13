@@ -47,7 +47,7 @@ export default function Hero() {
   }, [slides.length]);
 
   return (
-    <div className="relative w-full h-[600px] overflow-hidden ">
+    <div className="relative w-full h-[600px] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -62,13 +62,11 @@ export default function Hero() {
             className="object-cover"
             priority={index === 0} // Prioritize the first image for faster loading
           />
-          <div className="mx-9 absolute top-0 left-0 h-full w-1/2  flex flex-col justify-center text-sky-900 pl-6 pr-4">
+          <div className="absolute top-0 left-0 h-full w-full sm:w-1/2 flex flex-col justify-center text-sky-900 px-4 sm:pl-6 sm:pr-4 mx-auto max-w-[90%] sm:max-w-[50%]">
             <h1 className="text-3xl sm:text-5xl font-semibold font-serif">
               {slide.title}
             </h1>
-            <p className="text-xl text-white sm:text-xl ">
-              {slide.description}
-            </p>
+            <p className="text-xl text-white sm:text-xl">{slide.description}</p>
           </div>
         </div>
       ))}
