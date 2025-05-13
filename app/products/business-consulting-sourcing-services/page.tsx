@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
 import ProductsHero from "../../herosections/products_hero";
-import MedicalList from "@/app/components/common_components/products_components/medical_list";
-import { Car } from "lucide-react";
-import CarsAndMachineryList from "@/app/components/common_components/products_components/carandmachinery_list";
+
 import BusinessList from "@/app/components/common_components/products_components/business_list";
 
 export default function Products() {
