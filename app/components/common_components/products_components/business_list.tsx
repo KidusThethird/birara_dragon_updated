@@ -190,7 +190,7 @@ export default function BusinessList() {
                 className={`px-4 py-2 rounded ${
                   currentPage === 1
                     ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                    : "bg-blue-600 text-white hover:bg-blue-700"
+                    : "bg-sky-900 text-white hover:bg-sky-800"
                 }`}
               >
                 Previous
@@ -204,7 +204,7 @@ export default function BusinessList() {
                     onClick={() => handlePageChange(page)}
                     className={`px-4 py-2 rounded ${
                       currentPage === page
-                        ? "bg-blue-600 text-white"
+                        ? "bg-sky-800 text-white"
                         : "bg-gray-200 text-gray-800 hover:bg-gray-300"
                     }`}
                   >
@@ -220,7 +220,7 @@ export default function BusinessList() {
                 className={`px-4 py-2 rounded ${
                   currentPage === totalPages
                     ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                    : "bg-blue-600 text-white hover:bg-blue-700"
+                    : "bg-sky-800 text-white hover:bg-sky-800"
                 }`}
               >
                 Next
