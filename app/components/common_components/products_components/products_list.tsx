@@ -1,4 +1,3 @@
-// components/ProductsPage.tsx
 "use client";
 import Image from "next/image";
 import { useState } from "react";
@@ -22,7 +21,7 @@ export default function ProductsPage() {
     setOpenDropdown(openDropdown === category ? null : category);
   };
 
-  // Sample menu data with productId for Furniture subitems
+  // Menu data with corrected typos
   const menuItems = [
     {
       category: "Furniture",
@@ -33,10 +32,9 @@ export default function ProductsPage() {
         { name: "Sofa", productId: "53" },
         { name: "Hotel Guest Room Furniture", productId: "54" },
         { name: "Office Furniture", productId: "55" },
-        { name: "Childeren's Furniture", productId: "56" },
+        { name: "Children's Furniture", productId: "56" }, // Fixed typo
       ],
     },
-
     {
       category: "Medical Supplies & Equipment",
       subItems: [
@@ -44,12 +42,10 @@ export default function ProductsPage() {
         { name: "Surgical Instruments", productId: "101" },
         { name: "Patient Monitoring Devices", productId: "102" },
         { name: "Diagnostic Imaging Equipment", productId: "103" },
-        { name: "Disposable Medical Supplies:", productId: "104" },
-
+        { name: "Disposable Medical Supplies", productId: "104" }, // Removed trailing colon
         { name: "Hospital Furniture & Beds", productId: "105" },
       ],
     },
-
     {
       category: "Cars, Machinery & Electronics",
       subItems: [
@@ -81,7 +77,6 @@ export default function ProductsPage() {
         { name: "Commercial Fixtures & Displays", productId: "121" },
       ],
     },
-
     {
       category: "General Trading & Wholesale Products",
       subItems: [
@@ -92,7 +87,6 @@ export default function ProductsPage() {
         { name: "Cosmetic & Skincare Products", productId: "126" },
       ],
     },
-
     {
       category: "Business Consulting & Sourcing Services",
       subItems: [
@@ -103,7 +97,6 @@ export default function ProductsPage() {
         { name: "Export & Import Support", productId: "131" },
       ],
     },
-
     {
       category: "Coffee",
       subItems: [],
@@ -114,7 +107,7 @@ export default function ProductsPage() {
   const products = [
     { name: "Solid Wood Wall Panels", image: "/products/1.jpeg" },
     { name: "Dining table", image: "/products/2.jpeg" },
-    { name: "Sofa bed", image: "/products/3.jpeg" },
+    { name: "Sofa bed", image: "/products/50.jpeg" },
     { name: "Fence Main Gate", image: "/products/4.jpeg" },
     { name: "Side Table", image: "/products/5.jpeg" },
     { name: "Cast Aluminium", image: "/products/6.jpeg" },
@@ -185,6 +178,9 @@ export default function ProductsPage() {
               <BreadcrumbLink href="/products">Products</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/products">All Products</BreadcrumbLink>
+            </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
       </div>
@@ -202,9 +198,16 @@ export default function ProductsPage() {
                   onClick={() => toggleDropdown(item.category)}
                   className="w-full text-left text-gray-800 hover:bg-gray-200 p-2 flex justify-between items-center"
                 >
-                  <a href={`products/${item.category.toLowerCase()}`}>
+                  <Link
+                    href={`/products/${item.category
+                      .toLowerCase()
+                      .replace(/ \/ /g, "-")
+                      .replace(/ & /g, "-")
+                      .replace(/, /g, "-")
+                      .replace(/ /g, "-")}`}
+                  >
                     <span>{item.category}</span>
-                  </a>
+                  </Link>
                   {item.subItems.length > 0 && (
                     <svg
                       className={`w-4 h-4 transform transition-transform ${
@@ -226,27 +229,16 @@ export default function ProductsPage() {
                 </button>
                 {openDropdown === item.category && item.subItems.length > 0 && (
                   <ul className="pl-4 mt-2 space-y-1">
-                    {item.subItems.map((subItem) => {
-                      // For Furniture subitems, extract productId; otherwise, use default href
-                      const href =
-                        "1" === "1" && typeof subItem === "object"
-                          ? `/product_details/${subItem.productId}`
-                          : "#";
-
-                      const displayName =
-                        typeof subItem === "object" ? subItem.name : subItem;
-
-                      return (
-                        <li key={displayName}>
-                          <a
-                            href={href}
-                            className="block text-gray-600 hover:text-gray-800 p-2"
-                          >
-                            {displayName}
-                          </a>
-                        </li>
-                      );
-                    })}
+                    {item.subItems.map((subItem) => (
+                      <li key={subItem.productId}>
+                        <Link
+                          href={`/product_details/${subItem.productId}`}
+                          className="block text-gray-600 hover:text-gray-800 p-2"
+                        >
+                          {subItem.name}
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
                 )}
               </li>

@@ -1,4 +1,3 @@
-// components/ProductsPage.tsx
 "use client";
 import Image from "next/image";
 import { useState } from "react";
@@ -36,7 +35,6 @@ export default function MedicalList() {
         { name: "Childeren's Furniture", productId: "56" },
       ],
     },
-
     {
       category: "Medical Supplies & Equipment",
       subItems: [
@@ -44,12 +42,10 @@ export default function MedicalList() {
         { name: "Surgical Instruments", productId: "101" },
         { name: "Patient Monitoring Devices", productId: "102" },
         { name: "Diagnostic Imaging Equipment", productId: "103" },
-        { name: "Disposable Medical Supplies:", productId: "104" },
-
+        { name: "Disposable Medical Supplies", productId: "104" },
         { name: "Hospital Furniture & Beds", productId: "105" },
       ],
     },
-
     {
       category: "Cars, Machinery & Electronics",
       subItems: [
@@ -81,7 +77,6 @@ export default function MedicalList() {
         { name: "Commercial Fixtures & Displays", productId: "121" },
       ],
     },
-
     {
       category: "General Trading & Wholesale Products",
       subItems: [
@@ -92,7 +87,6 @@ export default function MedicalList() {
         { name: "Cosmetic & Skincare Products", productId: "126" },
       ],
     },
-
     {
       category: "Business Consulting & Sourcing Services",
       subItems: [
@@ -103,18 +97,16 @@ export default function MedicalList() {
         { name: "Export & Import Support", productId: "131" },
       ],
     },
-
     {
       category: "Coffee",
       subItems: [],
     },
   ];
 
-  // New products array with only furniture items, starting from /products/furniture/49.jpeg
+  // New products array with only medical items
   const products = [
     { name: "Scrubs & Medical Apparel", image: "/products/medical/100.jpeg" },
     { name: "Surgical Instruments", image: "/products/medical/101.jpeg" },
-
     { name: "Patient Monitoring Devices", image: "/products/medical/102.jpeg" },
     {
       name: "Diagnostic Imaging Equipment",
@@ -153,7 +145,7 @@ export default function MedicalList() {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink href="/furniture">
+              <BreadcrumbLink href="/medical-supplies">
                 Medical Supplies and Equipment
               </BreadcrumbLink>
             </BreadcrumbItem>
@@ -174,9 +166,15 @@ export default function MedicalList() {
                   onClick={() => toggleDropdown(item.category)}
                   className="w-full text-left text-gray-800 hover:bg-gray-200 p-2 flex justify-between items-center"
                 >
-                  <a href={`${item.category.toLowerCase()}`}>
+                  <Link
+                    href={`/products/${item.category
+                      .toLowerCase()
+                      .replace(/ & /g, "-")
+                      .replace(/, /g, "-")
+                      .replace(/ /g, "-")}`}
+                  >
                     <span>{item.category}</span>
-                  </a>
+                  </Link>
                   {item.subItems.length > 0 && (
                     <svg
                       className={`w-4 h-4 transform transition-transform ${
@@ -200,12 +198,12 @@ export default function MedicalList() {
                   <ul className="pl-4 mt-2 space-y-1">
                     {item.subItems.map((subItem) => (
                       <li key={subItem.productId}>
-                        <a
-                          href={`#${subItem.productId}`} // Optionally use productId in the href
+                        <Link
+                          href={`/product_details/${subItem.productId}`}
                           className="block text-gray-600 hover:text-gray-800 p-2"
                         >
-                          {subItem.name} {/* Render the name property */}
-                        </a>
+                          {subItem.name}
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -219,7 +217,7 @@ export default function MedicalList() {
         <main className="w-full md:w-3/4 p-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {currentProducts.map((product) => {
-              // Extract the number from the image path (e.g., "/products/furniture/49.jpeg" -> "49")
+              // Extract the number from the image path (e.g., "/products/medical/100.jpeg" -> "100")
               const imageNumber =
                 product.image.match(/\/products\/medical\/(\d+)\.jpeg/)?.[1] ||
                 "0";

@@ -1,4 +1,3 @@
-// app/components/Navbar.tsx
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
@@ -18,6 +17,36 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Menu items corresponding to ProductsPage.tsx and other components
+  const productCategories = [
+    { name: "Furniture", slug: "furniture" },
+    {
+      name: "Medical Supplies & Equipment",
+      slug: "medical-supplies-equipment",
+    },
+    {
+      name: "Cars, Machinery & Electronics",
+      slug: "cars-machinery-electronics",
+    },
+    {
+      name: "Fashion, Apparel & Human Hair",
+      slug: "fashion-apparel-human-hair",
+    },
+    {
+      name: "Home, Office, Commercial Furnishings & Building Materials",
+      slug: "home-office-commercial-furnishings-building-materials",
+    },
+    {
+      name: "General Trading & Wholesale Products",
+      slug: "general-trading-wholesale-products",
+    },
+    {
+      name: "Business Consulting & Sourcing Services",
+      slug: "business-consulting-sourcing-services",
+    },
+    { name: "Coffee", slug: "coffee" },
+  ];
+
   return (
     <div
       className={`fixed top-0 left-0 w-full text-white py-5 z-50 transition-colors duration-300 ${
@@ -36,9 +65,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu (Hidden on Mobile) */}
-
         <div className="hidden sm:block w-3/4 items-center">
-          {" "}
           <div className="flex justify-end px-10 items-center gap-2">
             <Image
               src="/icons/email.png"
@@ -48,7 +75,7 @@ export default function Navbar() {
             />
             <h1>Email</h1>
           </div>
-          <div className=" sm:flex w-3/4 items-center">
+          <div className="sm:flex w-3/4 items-center">
             <div className="flex w-3/4 justify-around relative">
               <div className="group">
                 <Link className="cursor-pointer hover:text-gray-200" href="/">
@@ -56,37 +83,37 @@ export default function Navbar() {
                 </Link>
               </div>
               <div className="group">
-                <a
+                <Link
                   href="/products"
                   className="cursor-pointer hover:text-gray-200"
                 >
                   Products
-                </a>
-                <div className="absolute hidden group-hover:block bg-sky-700 text-white py-2 rounded-md shadow-lg min-w-[120px]">
-                  <a
+                </Link>
+                <div className="absolute hidden group-hover:block bg-sky-700 text-white py-2 rounded-md shadow-lg min-w-[200px]">
+                  <Link
                     href="/products"
                     className="block px-4 py-2 hover:bg-sky-800"
                   >
                     All Products
-                  </a>
-                  <a
-                    href="/products/furniture"
-                    className="block px-4 py-2 hover:bg-sky-800"
-                  >
-                    Furniture
-                  </a>
+                  </Link>
+                  {productCategories.map((category) => (
+                    <Link
+                      key={category.slug}
+                      href={`/products/${category.slug}`}
+                      className="block px-4 py-2 hover:bg-sky-800"
+                    >
+                      {category.name}
+                    </Link>
+                  ))}
                 </div>
               </div>
               <div className="group">
-                <h1 className="cursor-pointer hover:text-gray-200">Cases</h1>
-                <div className="absolute hidden group-hover:block bg-sky-700 text-white py-2 rounded-md shadow-lg min-w-[120px]">
-                  <a
-                    href="/oversea_cases"
-                    className="block px-4 py-2 hover:bg-sky-800"
-                  >
-                    OverSea Cases
-                  </a>
-                </div>
+                <Link
+                  className="cursor-pointer hover:text-gray-200"
+                  href="/team"
+                >
+                  <h1>Our Team</h1>
+                </Link>
               </div>
               <div className="group">
                 <h1 className="cursor-pointer hover:text-gray-200">About</h1>
@@ -99,6 +126,7 @@ export default function Navbar() {
             </div>
           </div>
         </div>
+
         {/* Mobile Menu Button (Visible on Mobile) */}
         <div className="sm:hidden flex items-center">
           <button
@@ -193,7 +221,7 @@ export default function Navbar() {
               </button>
               <div
                 className={`overflow-hidden transition-all duration-300 ${
-                  isProductsOpen ? "max-h-20" : "max-h-0"
+                  isProductsOpen ? "max-h-96" : "max-h-0"
                 }`}
               >
                 <Link
@@ -203,21 +231,24 @@ export default function Navbar() {
                 >
                   All Products
                 </Link>
-                <Link
-                  href="/products/furniture"
-                  className="block pl-4 py-2 text-white hover:text-gray-200"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Furniture
-                </Link>
+                {productCategories.map((category) => (
+                  <Link
+                    key={category.slug}
+                    href={`/products/${category.slug}`}
+                    className="block pl-4 py-2 text-white hover:text-gray-200"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {category.name}
+                  </Link>
+                ))}
               </div>
             </div>
             <Link
-              href="/oversea_cases"
+              href="/team"
               className="text-xl text-white hover:text-gray-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Cases
+              Our Team
             </Link>
             <Link
               href="/about"
