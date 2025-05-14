@@ -602,5 +602,42 @@
     "title": "Wall panel",
     "detail_text": "Versatile Wall Panels: Laminate, Plain Plates, Wave Models, Strip Panels, and WPC Materials",
     "category": "Wall Decoration"
+  },
+
+  {
+    "image_id": "140",
+    "title": "Air Conditioner",
+    "detail_text": "",
+    "category": "Home Appliance"
+  },
+  {
+    "image_id": "141",
+    "title": "Television",
+    "detail_text": "",
+    "category": "Home Appliance"
+  },
+  {
+    "image_id": "142",
+    "title": "Oven",
+    "detail_text": "A oven is a kitchen appliance used for baking, roasting, and cooking food. It generates heat using electric heating elements or gas to cook food at high temperatures. Ovens are widely used in home kitchens, restaurants, and bakeries.",
+    "category": "Home Appliance"
+  },
+  {
+    "image_id": "143",
+    "title": "Dishwasher",
+    "detail_text": "A dishwasher is a kitchen appliance that automatically cleans dishes, cookware, and glassware using high-temperature water, detergent, and spray technology. It efficiently removes grease, food residues, and provides drying and sanitization functions.",
+    "category": "Home Appliance"
+  },
+  {
+    "image_id": "144",
+    "title": "Refrigerator",
+    "detail_text": "Refrigerators can be classified based on structure, usage",
+    "category": "Home Appliance"
+  },
+  {
+    "image_id": "145",
+    "title": "Range hood / Gas stove",
+    "detail_text": "Microwave oven,hood,cooker,dish washer,kitchens waste disposal shredder",
+    "category": "Home Appliance"
   }
 ]
