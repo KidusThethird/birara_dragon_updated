@@ -143,6 +143,18 @@ export default function ProductsPage() {
         { name: "Chandelier", productId: "150" },
       ],
     },
+    {
+      category: "Aluminum Ceiling",
+      subItems: [],
+    },
+
+    {
+      category: "Kitchen Cabinetry",
+      subItems: [
+        { name: "Cabinet Accessorie", productId: "152" },
+        { name: "Modern Kitchen Cabinetry", productId: "153" },
+      ],
+    },
   ];
 
   // Products data with fourth page added

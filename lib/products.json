@@ -671,5 +671,23 @@
     "title": "Chandelier",
     "detail_text": "Chandeliers are lighting fixtures suspended from the ceiling that provide illumination and serve as decorative elements in interior spaces. Chandeliers can be used in various settings, including living rooms, dining rooms, bedrooms, and commercial spaces.",
     "category": "Electrical Solution"
+  },
+  {
+    "image_id": "151",
+    "title": "Aluminum Ceiling",
+    "detail_text": "Aluminum profile ceilings are a type of ceiling material made from aluminum alloys through processes such as extrusion, cutting, and surface treatment. They are widely used in modern environments like commercial buildings, office spaces, and transportation hubs. Aluminum profile ceilings are popular due to their lightweight, corrosion-resistant, flexible design, and easy installation. Common forms include aluminum curtain walls, aluminum strip ceilings, aluminum grid ceilings, and aluminum clip-in ceilings.",
+    "category": "Aluminum Ceiling"
+  },
+  {
+    "image_id": "152",
+    "title": "Cabinet Accessorie",
+    "detail_text": "Cabinet accessories are components used to enhance the functionality, organization, and aesthetics of cabinets. These accessories help optimize storage space and improve convenience.",
+    "category": "Kitchen Cabinetry"
+  },
+  {
+    "image_id": "153",
+    "title": "Modern Kitchen Cabinetry",
+    "detail_text": "Designing Your Dream Kitchen: Modern Solutions for Home Cooking Spaces and plan your kitchen cabinet design layout",
+    "category": "Kitchen Cabinetry"
   }
 ]

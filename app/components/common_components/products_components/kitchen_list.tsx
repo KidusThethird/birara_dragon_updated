@@ -11,12 +11,12 @@ import {
 } from "@/components/ui/breadcrumb";
 import MenuSidebar from "../product_menu_list";
 
-export default function FurniturePage() {
+export default function KitchenList() {
   // State for pagination
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 12; // 12 products per page
 
-  // Menu data
+  // Sample menu data
   const menuItems = [
     {
       category: "Furniture",
@@ -156,23 +156,10 @@ export default function FurniturePage() {
       ],
     },
   ];
-
-  // New products array with only furniture items, starting from /products/furniture/49.jpeg
+  // New products array with only medical items
   const products = [
-    { name: "Dining table", image: "/products/furniture/49.jpeg" },
-    { name: "Sofa bed", image: "/products/furniture/50.jpeg" },
-    { name: "Side Table", image: "/products/furniture/51.jpeg" },
-    { name: "Out Door Furniture", image: "/products/furniture/52.jpeg" },
-    { name: "Sofa", image: "/products/furniture/53.png" },
-    {
-      name: "Hotel Guest Room Furniture",
-      image: "/products/furniture/54.jpeg",
-    },
-    { name: "Office Furniture", image: "/products/furniture/55.jpeg" },
-    {
-      name: "Childeren's Furniture",
-      image: "/products/furniture/56.jpeg",
-    },
+    { name: "Cabinet Accessorie", image: "/products/kitchen/152.jpeg" },
+    { name: "Modern Kitchen Cabinetry", image: "/products/kitchen/153.jpeg" },
   ];
 
   // Pagination logic
@@ -201,7 +188,9 @@ export default function FurniturePage() {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink href="/furniture">Furniture</BreadcrumbLink>
+              <BreadcrumbLink href="/medical-supplies">
+                Kitchen Cabinetry
+              </BreadcrumbLink>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
@@ -215,11 +204,10 @@ export default function FurniturePage() {
         <main className="w-full md:w-3/4 p-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {currentProducts.map((product) => {
-              // Extract the number from the image path (e.g., "/products/furniture/49.jpeg" -> "49")
+              // Extract the number from the image path (e.g., "/products/medical/100.jpeg" -> "100")
               const imageNumber =
-                product.image.match(
-                  /\/products\/furniture\/(\d+)\.(jpeg|png)/
-                )?.[1] || "0";
+                product.image.match(/\/products\/kitchen\/(\d+)\.jpeg/)?.[1] ||
+                "0";
 
               return (
                 <Link
@@ -254,7 +242,7 @@ export default function FurniturePage() {
                 className={`px-4 py-2 rounded ${
                   currentPage === 1
                     ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                    : "bg-sky-900 text-white hover:bg-sky-900"
+                    : "bg-sky-900 text-white hover:bg-sky-800"
                 }`}
               >
                 Previous

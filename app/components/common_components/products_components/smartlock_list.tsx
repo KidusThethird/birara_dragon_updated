@@ -27,7 +27,7 @@ export default function SmartLockList() {
         { name: "Sofa", productId: "53" },
         { name: "Hotel Guest Room Furniture", productId: "54" },
         { name: "Office Furniture", productId: "55" },
-        { name: "Children's Furniture", productId: "56" }, // Fixed typo
+        { name: "Children's Furniture", productId: "56" },
       ],
     },
     {
@@ -96,8 +96,66 @@ export default function SmartLockList() {
       category: "Coffee",
       subItems: [],
     },
-  ];
 
+    {
+      category: "Gypsum member",
+      subItems: [],
+    },
+    {
+      category: "Smart Lock",
+      subItems: [],
+    },
+    {
+      category: "Stainless steel partition",
+      subItems: [],
+    },
+
+    {
+      category: "Wall Decoration",
+      subItems: [
+        { name: "Foam Ceramics", productId: "135" },
+        { name: "Solid Wood Wall Panels", productId: "136" },
+        { name: "Aluminum / Stainless Steel", productId: "137" },
+        { name: "Soft Porcelain flexible tiles", productId: "138" },
+        { name: "Wall panel", productId: "139" },
+      ],
+    },
+
+    {
+      category: "Home Appliance",
+      subItems: [
+        { name: "Air Conditioner", productId: "140" },
+        { name: "Television", productId: "141" },
+        { name: "Oven", productId: "142" },
+        { name: "DishWasher", productId: "143" },
+        { name: "Refrigerator", productId: "144" },
+        { name: "Gas Stove", productId: "145" },
+      ],
+    },
+
+    {
+      category: "Electrical Solutions",
+      subItems: [
+        { name: "Floor Lamp", productId: "146" },
+        { name: "Lighting Switch", productId: "147" },
+        { name: "Outdoor Wall Lamp", productId: "148" },
+        { name: "Track Light", productId: "149" },
+        { name: "Chandelier", productId: "150" },
+      ],
+    },
+    {
+      category: "Aluminum Ceiling",
+      subItems: [],
+    },
+
+    {
+      category: "Kitchen Cabinetry",
+      subItems: [
+        { name: "Cabinet Accessorie", productId: "152" },
+        { name: "Modern Kitchen Cabinetry", productId: "153" },
+      ],
+    },
+  ];
   // New products array with only general trading items
   const products = [{ name: "Smart Lock", image: "/products/lock/133.jpeg" }];
 
