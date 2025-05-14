@@ -547,5 +547,12 @@
     "title": "Export & Import Support",
     "detail_text": "Assistance with customs clearance, documentation, and regulatory compliance, simplifying international trade for clients.",
     "category": "Business Consulting & Sourcing Services"
+  },
+  {
+    "image_id": "132",
+    "title": "Gypsum member",
+    "detail_text": "Horn,Arc, lamp panel,top line,pillar,roman capital,GRC material",
+    "category": "Gypsum member",
+    "related_images": ["sc26", "sc27", "sc25"]
   }
 ]
