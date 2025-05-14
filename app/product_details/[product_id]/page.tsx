@@ -132,14 +132,14 @@ export default function ProductDetails({
             <p className="text-gray-700 text-base leading-relaxed mb-8">
               {product.detail_text}
             </p>
-            <div className="flex space-x-6">
+            {/* <div className="flex space-x-6">
               <button className="bg-sky-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-sky-700 transition-colors duration-300 shadow-md hover:shadow-lg">
                 Inquiry
               </button>
               <button className="bg-sky-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-sky-700 transition-colors duration-300 shadow-md hover:shadow-lg">
                 Contact
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
 
