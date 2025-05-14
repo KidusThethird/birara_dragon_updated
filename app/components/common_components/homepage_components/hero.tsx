@@ -5,18 +5,6 @@ import Image from "next/image";
 export default function Hero() {
   const slides = [
     {
-      image: "/hero/img05.jpg",
-      title: "Medical Supplies & Equipment",
-      description:
-        "Supplying a wide range of medical products, including medial diagnostic machineries, premium-quality scrubs for top brands, medical devices, and essential equipment for hospitals and clinics.",
-    },
-    {
-      image: "/hero/img07.jpg",
-      title: "Cars, Machinery & Electronics",
-      description:
-        "Sourcing and providing automobiles, heavy machinery, and electronics for industrial, commercial, and personal use, including advanced technology and gadgets.",
-    },
-    {
       image: "/hero/hero3.jpeg",
       title: "Furniture",
       description:
@@ -28,6 +16,19 @@ export default function Hero() {
       description:
         "Providing durable, high-quality building materials like cement, steel, and timber for construction and renovation projects.",
     },
+    {
+      image: "/hero/img05.jpg",
+      title: "Medical Supplies & Equipment",
+      description:
+        "Supplying a wide range of medical products, including medial diagnostic machineries, premium-quality scrubs for top brands, medical devices, and essential equipment for hospitals and clinics.",
+    },
+    {
+      image: "/hero/img07.jpg",
+      title: "Cars, Machinery & Electronics",
+      description:
+        "Sourcing and providing automobiles, heavy machinery, and electronics for industrial, commercial, and personal use, including advanced technology and gadgets.",
+    },
+
     {
       image: "/hero/img01.jpg",
       title: "Coffee Beans and oil seeds Importer",
@@ -42,7 +43,7 @@ export default function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 7000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [slides.length]);
 
@@ -63,10 +64,18 @@ export default function Hero() {
             priority={index === 0} // Prioritize the first image for faster loading
           />
           <div className="absolute top-0 left-0 h-full w-full sm:w-1/2 flex flex-col justify-center text-sky-900 px-4 sm:pl-6 sm:pr-4 mx-auto max-w-[90%] sm:max-w-[50%]">
-            <h1 className="text-3xl sm:text-5xl font-semibold font-serif">
-              {slide.title}
-            </h1>
-            <p className="text-xl text-white sm:text-xl">{slide.description}</p>
+            <div
+              className=" space-y-5 p-6 rounded"
+              style={{ backgroundColor: "rgba(12, 74, 110, 0.7)" }}
+            >
+              <h1 className="text-3xl text-white sm:text-5xl font-semibold font-serif">
+                {" "}
+                {slide.title}
+              </h1>
+              <p className="text-xl text-white sm:text-xl">
+                {slide.description}
+              </p>
+            </div>
           </div>
         </div>
       ))}
