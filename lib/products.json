@@ -639,5 +639,37 @@
     "title": "Range hood / Gas stove",
     "detail_text": "Microwave oven,hood,cooker,dish washer,kitchens waste disposal shredder",
     "category": "Home Appliance"
+  },
+
+  {
+    "image_id": "146",
+    "title": "Floor Lamp",
+    "detail_text": "Floor lamps come in various styles, designs, and functionalities.",
+    "category": "Electrical Solution"
+  },
+  {
+    "image_id": "147",
+    "title": "Lighting Switch",
+    "detail_text": "A Lighting Switch is a device used to control lighting circuits, commonly found in homes, offices, and commercial spaces. It can turn lights on or off through physical buttons, touch, remote control, or smart technology.",
+    "category": "Electrical Solution"
+  },
+
+  {
+    "image_id": "158",
+    "title": "Outdoor wall lamp",
+    "detail_text": "An outdoor wall lamp is a lighting fixture designed for use on the exterior walls of homes, buildings, or outdoor spaces. These lamps are specifically made to withstand outdoor elements, such as rain, wind, and varying temperatures. Outdoor wall lamps are commonly used for illuminating entryways, patios, gardens, or to enhance the overall ambiance of a property while ensuring safety and security at night.",
+    "category": "Electrical Solution"
+  },
+  {
+    "image_id": "149",
+    "title": "Track Light",
+    "detail_text": "Track lighting is a versatile and modern lighting system that consists of a track (usually mounted to the ceiling) with multiple light fixtures that can be adjusted along the track to focus light in different directions. It’s a popular choice for both residential and commercial spaces due to its flexibility, aesthetic appeal, and ability to highlight specific areas or objects.",
+    "category": "Electrical Solution"
+  },
+  {
+    "image_id": "150",
+    "title": "Chandelier",
+    "detail_text": "Chandeliers are lighting fixtures suspended from the ceiling that provide illumination and serve as decorative elements in interior spaces. Chandeliers can be used in various settings, including living rooms, dining rooms, bedrooms, and commercial spaces.",
+    "category": "Electrical Solution"
   }
 ]
