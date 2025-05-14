@@ -569,5 +569,38 @@
     "detail_text": "Elegant Partitions: Stainless Screens and Diverse Materials for Buildings, Villas, Hotels, and Apartments",
     "category": "Stainless steel partition",
     "related_images": ["sc31", "sc32", "sc33", "sc34"]
+  },
+
+  {
+    "image_id": "135",
+    "title": "Foam Ceramics",
+    "detail_text": "Foamed ceramics are a type of lightweight, porous ceramic material made by high-temperature sintering. Their internal structure resembles a “foam,” hence the name. During manufacture, a foaming agent (e.g., carbonates, sulfates) is added to the ceramic powder; when fired, the agent decomposes and releases gas, creating uniform closed- or open-cell pores throughout the body.",
+    "category": "Wall Decoration"
+  },
+
+  {
+    "image_id": "136",
+    "title": "Solid Wood Wall Panels",
+    "detail_text": "Solid wood wall panels are wall cladding materials made from natural timber, processed through drying, cutting, polishing, and shaping. These panels retain the original wood grain and color, offering a warm and organic look and feel, perfect for upscale homes, commercial interiors, and cultural spaces.",
+    "category": "Wall Decoration"
+  },
+
+  {
+    "image_id": "137",
+    "title": "Aluminum / stainless steel Mosaic",
+    "detail_text": "Aluminum mosaic is a decorative material made from small pieces of aluminum that are pieced together. It is commonly used for wall, floor, swimming pool, kitchen, bathroom, and other areas of decoration. Aluminum mosaics are lightweight, durable, and corrosion-resistant, with a unique metallic sheen that adds a modern and artistic touch to any space. They come in various colors, shapes, and designs, making them widely used in both indoor and outdoor decoration.",
+    "category": "Wall Decoration"
+  },
+  {
+    "image_id": "138",
+    "title": "Soft porcelain flexible tiles",
+    "detail_text": "Cement soft porcelain，Coarse line stone soft porcelain，Vein stone soft porcelain，Buildings stone soft porcelain，Charcoal wood soft porcelain，Aluminum foam soft porcelain，Rusty SLATE soft porcelain，Hemp woven stone soft porcelain",
+    "category": "Wall Decoration"
+  },
+  {
+    "image_id": "139",
+    "title": "Wall panel",
+    "detail_text": "Versatile Wall Panels: Laminate, Plain Plates, Wave Models, Strip Panels, and WPC Materials",
+    "category": "Wall Decoration"
   }
 ]

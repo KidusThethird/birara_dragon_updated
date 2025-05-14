@@ -109,6 +109,17 @@ export default function ProductsPage() {
       category: "Stainless steel partition",
       subItems: [],
     },
+
+    {
+      category: "Wall Decoration",
+      subItems: [
+        { name: "Foam Ceramics", productId: "127" },
+        { name: "Solid Wood Wall Panels", productId: "128" },
+        { name: "Aluminum / Stainless Steel", productId: "129" },
+        { name: "Soft Porcelain flexible tiles", productId: "130" },
+        { name: "Wall panel", productId: "131" },
+      ],
+    },
   ];
 
   // Products data with fourth page added
