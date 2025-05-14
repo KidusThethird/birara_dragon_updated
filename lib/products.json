@@ -561,5 +561,13 @@
     "detail_text": "Advanced Security: Smart Locks with Fingerprint, Code, IC, and Face Scan Technology",
     "category": "Smart Lock",
     "related_images": ["sc28", "sc29", "sc30"]
+  },
+
+  {
+    "image_id": "134",
+    "title": "Stainless steel partition",
+    "detail_text": "Elegant Partitions: Stainless Screens and Diverse Materials for Buildings, Villas, Hotels, and Apartments",
+    "category": "Stainless steel partition",
+    "related_images": ["sc31", "sc32", "sc33", "sc34"]
   }
 ]
