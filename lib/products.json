@@ -554,5 +554,12 @@
     "detail_text": "Horn,Arc, lamp panel,top line,pillar,roman capital,GRC material",
     "category": "Gypsum member",
     "related_images": ["sc26", "sc27", "sc25"]
+  },
+  {
+    "image_id": "133",
+    "title": "Smart Lock",
+    "detail_text": "Advanced Security: Smart Locks with Fingerprint, Code, IC, and Face Scan Technology",
+    "category": "Smart Lock",
+    "related_images": ["sc28", "sc29", "sc30"]
   }
 ]
