@@ -47,6 +47,14 @@ export default function Navbar() {
       slug: "business-consulting-sourcing-services",
     },
     { name: "Coffee", slug: "coffee" },
+    { name: "Gypsum member", slug: "gypsum-member" },
+    { name: "Smart Lock", slug: "smart-lock" },
+    { name: "Stainless steel partition", slug: "stainless-steel-partition" },
+    { name: "Wall Decoration", slug: "wall-decoration" },
+    { name: "Home Appliance", slug: "home-appliance" },
+    { name: "Electrical Solutions", slug: "electrical-solutions" },
+    { name: "Aluminum Celling", slug: "aluminum-ceiling" },
+    { name: "Kitchen Cabinetry", slug: "kitchen-cabinetry" },
   ];
 
   return (
@@ -92,7 +100,7 @@ export default function Navbar() {
                 >
                   Products
                 </Link>
-                <div className="absolute hidden group-hover:block bg-sky-700 text-white py-2 rounded-md shadow-lg min-w-[200px]">
+                <div className="absolute hidden group-hover:block bg-sky-700 text-white py-2 rounded-md shadow-lg min-w-[200px] max-h-96 overflow-y-auto">
                   <Link
                     href="/products"
                     className="block px-4 py-2 hover:bg-sky-800"
@@ -231,7 +239,7 @@ export default function Navbar() {
                 </svg>
               </button>
               <div
-                className={`overflow-hidden transition-all duration-300 ${
+                className={`overflow-y-auto transition-all duration-300 ${
                   isProductsOpen ? "max-h-96" : "max-h-0"
                 }`}
               >
