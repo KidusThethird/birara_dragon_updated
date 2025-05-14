@@ -173,12 +173,7 @@ const items = [
     text: "Elevator",
     link: "",
   },
-  {
-    id: 29,
-    image: "/products/otherproducts/elevator.jpg",
-    text: "Elevator",
-    link: "",
-  },
+
   {
     id: 30,
     image: "/products/otherproducts/household.jpg",
