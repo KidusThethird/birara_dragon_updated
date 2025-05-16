@@ -201,7 +201,7 @@ export default function Mainservices() {
       {/* Grid of Images */}
       <section className="py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {items.map((item) => (
               <Link href={item.link} key={item.id} className="block">
                 <div className="flex flex-col items-center text-center">
