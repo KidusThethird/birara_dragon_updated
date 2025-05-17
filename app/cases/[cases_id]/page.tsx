@@ -6,6 +6,7 @@ import CasesHero from "@/app/herosections/cases_hero";
 import casesData from "../../../lib/cases.json";
 import { ChevronRight, ChevronLeft } from "lucide-react";
 import { motion, useAnimation } from "framer-motion";
+import Image from "next/image";
 
 interface CaseItem {
   id: number;
@@ -108,9 +109,21 @@ export default function CasesDetail() {
           style={{ overflowX: "auto", WebkitOverflowScrolling: "touch" }}
         >
           {allImages.map((img, index) => (
-            <img
-              key={index}
+            // <img
+            //   key={index}
+            //   src={img}
+            //   alt={`${caseItem.title} thumbnail ${index + 1}`}
+            //   className={`max-w-[150px] object-contain rounded-lg cursor-pointer flex-shrink-0 ${
+            //     index === currentImageIndex ? "border-4 border-blue-600" : ""
+            //   }`}
+            //   onClick={() => handleThumbnailClick(index)}
+            // />
+
+            <Image
               src={img}
+              width={120}
+              height={120}
+              key={index}
               alt={`${caseItem.title} thumbnail ${index + 1}`}
               className={`max-w-[150px] object-contain rounded-lg cursor-pointer flex-shrink-0 ${
                 index === currentImageIndex ? "border-4 border-blue-600" : ""

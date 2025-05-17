@@ -55,6 +55,20 @@ export default function Navbar() {
     { name: "Electrical Solutions", slug: "electrical-solutions" },
     { name: "Aluminum Celling", slug: "aluminum-ceiling" },
     { name: "Kitchen Cabinetry", slug: "kitchen-cabinetry" },
+
+    { name: "Flooring", slug: "flooring" },
+    { name: "Sanitary Ware", slug: "sanitary-ware" },
+    { name: "Coating", slug: "coating" },
+    { name: "Curtain Fabric", slug: "curtain-fabric" },
+    { name: "Fire Place", slug: "fireplace" },
+    { name: "Architectural Design", slug: "architectural-design" },
+    { name: "Light Steel House", slug: "light-steel-house" },
+    { name: "Wardrobe Walkin Closet", slug: "wardrobe-walkin-closet" },
+    { name: "Roof Tiles", slug: "roof-tiles" },
+    { name: "Staircases", slug: "staircases" },
+    { name: "Modern Doors", slug: "modern-doors" },
+    { name: "Elevator", slug: "elevator" },
+    { name: "House Hold", slug: "house-hold" },
   ];
 
   return (
