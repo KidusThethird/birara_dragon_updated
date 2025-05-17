@@ -133,6 +133,17 @@ export default function Navbar() {
                   className={`cursor-pointer hover:text-gray-200 ${
                     pathname === "/about" ? "underline" : ""
                   }`}
+                  href="/cases"
+                >
+                  <h1>Cases</h1>
+                </Link>
+              </div>
+
+              <div className="group">
+                <Link
+                  className={`cursor-pointer hover:text-gray-200 ${
+                    pathname === "/about" ? "underline" : ""
+                  }`}
                   href="/about"
                 >
                   <h1>About</h1>
@@ -271,6 +282,16 @@ export default function Navbar() {
             >
               Our Team
             </Link>
+            <Link
+              href="/about"
+              className={`text-xl text-white hover:text-gray-200 ${
+                pathname === "/cases" ? "underline" : ""
+              }`}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Cases
+            </Link>
+
             <Link
               href="/about"
               className={`text-xl text-white hover:text-gray-200 ${

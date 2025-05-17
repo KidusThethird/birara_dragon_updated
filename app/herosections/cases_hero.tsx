@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Navbar from "../components/common_components/navbar";
 
-export default function OverSeaCasesHero() {
+export default function CasesHero() {
   return (
     <div>
       <Navbar />
