@@ -63,6 +63,38 @@ export default function Footer() {
               Our mission is to enhance lives and empower businesses by
               delivering high-quality products
             </p>
+
+            <div className="flex space-x-5 my-5 ">
+              <a href="">
+                <Image
+                  src="/icons/facebook.png"
+                  width={50}
+                  height={50}
+                  alt="Company logo"
+                  className="bg-white p-2 rounded-2xl hover:scale-105 hover:bg-sky-800"
+                />
+              </a>
+
+              <a href="">
+                <Image
+                  src="/icons/telegram.png"
+                  width={50}
+                  height={50}
+                  alt="Company logo"
+                  className="bg-white p-2 rounded-2xl hover:scale-105 hover:bg-sky-800"
+                />
+              </a>
+
+              <a href="">
+                <Image
+                  src="/icons/instagram.png"
+                  width={50}
+                  height={50}
+                  alt="Company logo"
+                  className="bg-white p-2 rounded-2xl hover:scale-105 hover:bg-sky-800"
+                />
+              </a>
+            </div>
           </div>
 
           {/* About Links */}
